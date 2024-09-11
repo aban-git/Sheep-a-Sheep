@@ -82,7 +82,7 @@ def init_game_easy():
                 t = ts[n]  # 获取排种类
                 n += 1
                 tile = Actor(f'tile{t}')  # 使用tileX图片创建Actor对象
-                tile.pos = 120 + (k * 0.5 + j) * tile.width, 100 + (k * 0.5 + i) * tile.height * 0.9  # 设定位置
+                tile.pos = 270 + (k * 0.5 + j) * tile.width, 250 + (k * 0.5 + i) * tile.height * 0.9  # 设定位置
                 tile.tag = t  # 记录种类
                 tile.layer = k  # 记录层级
                 tile.status = 1 if k == 1 else 0  # 除了最顶层，状态都设置为0（不可点）这里是个简化实现
